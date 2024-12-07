@@ -303,6 +303,7 @@
   "form.prefs.label.entry_order": "Makale Sıralama Sütunu",
   "form.prefs.label.entry_sorting": "Makale Sıralaması",
   "form.prefs.label.entry_swipe": "Dokunmatik ekranlarda makale kaydırmayı etkinleştir",
+  "form.prefs.label.filter_future_entries": "Gelecek makaleleri filtrele",
   "form.prefs.label.gesture_nav": "Makaleler arasında gezinmek için dokunma hareketi",
   "form.prefs.label.keyboard_shortcuts": "Klavye kısayollarını etkinleştir",
   "form.prefs.label.language": "Dil",

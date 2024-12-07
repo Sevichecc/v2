@@ -40,7 +40,8 @@ func (h *handler) showCategoryEntriesPage(w http.ResponseWriter, r *http.Request
 	builder.WithStatus(model.EntryStatusUnread)
 	builder.WithOffset(offset)
 	builder.WithLimit(user.EntriesPerPage)
-
+	builder.WithoutFutureEntries(user.FilterFutureEntries)
+	
 	entries, err := builder.GetEntries()
 	if err != nil {
 		html.ServerError(w, r, err)

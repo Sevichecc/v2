@@ -341,6 +341,7 @@
     "form.feed.label.scraper_rules": "Κανόνες Scraper",
     "form.feed.label.rewrite_rules": "Κανόνες Μετατροπής",
     "form.feed.label.blocklist_rules": "Κανόνες Αποκλεισμού",
+    "form.feed.label.without_future": "Μη εμφάνιση μελλοντικών καταχωρήσεων",
     "form.feed.label.keeplist_rules": "Κρατήστε Κανόνες",
     "form.feed.label.ignore_http_cache": "Αγνοήστε την προσωρινή μνήμη HTTP",
     "form.feed.label.allow_self_signed_certificates": "Να επιτρέπονται αυτο-υπογεγραμμένα ή μη έγκυρα πιστοποιητικά",
@@ -582,5 +583,5 @@
     "enclosure_media_controls.speed.slower" : "Slower",
     "enclosure_media_controls.speed.slower.title" : "Slower by %sx",
     "enclosure_media_controls.speed.reset" : "Reset",
-    "enclosure_media_controls.speed.reset.title" : "Reset speed to 1x"
+    "enclosure_media_controls.speed.reset.title": "Reset speed to 1x"
 }

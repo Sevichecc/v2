@@ -389,6 +389,7 @@
     "form.prefs.select.older_first": "Najstarsze wpisy jako pierwsze",
     "form.prefs.label.keyboard_shortcuts": "Włącz skróty klawiszowe",
     "form.prefs.label.entry_swipe": "Włącz przesuwanie wpisów na ekranach dotykowych",
+    "form.prefs.label.filter_future_entries": "Filtruj wpisy przyszłe",
     "form.prefs.label.gesture_nav": "Gest do poruszania się między wpisami",
     "form.prefs.label.show_reading_time": "Pokaż szacowany czas czytania wpisów",
     "form.prefs.select.recent_first": "Najnowsze wpisy jako pierwsze",

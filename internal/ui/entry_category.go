@@ -29,7 +29,8 @@ func (h *handler) showCategoryEntryPage(w http.ResponseWriter, r *http.Request) 
 	builder.WithCategoryID(categoryID)
 	builder.WithEntryID(entryID)
 	builder.WithoutStatus(model.EntryStatusRemoved)
-
+	builder.WithoutFutureEntries(user.FilterFutureEntries)
+	
 	entry, err := builder.GetEntry()
 	if err != nil {
 		html.ServerError(w, r, err)

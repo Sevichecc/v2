@@ -40,6 +40,7 @@ type SettingsForm struct {
 	CustomJS               string
 	ExternalFontHosts      string
 	EntrySwipe             bool
+	FilterFutureEntries    bool
 	GestureNav             string
 	DisplayMode            string
 	DefaultReadingSpeed    int
@@ -105,6 +106,7 @@ func (s *SettingsForm) Merge(user *model.User) *model.User {
 	user.CustomJS = s.CustomJS
 	user.ExternalFontHosts = s.ExternalFontHosts
 	user.EntrySwipe = s.EntrySwipe
+	user.FilterFutureEntries = s.FilterFutureEntries
 	user.GestureNav = s.GestureNav
 	user.DisplayMode = s.DisplayMode
 	user.CJKReadingSpeed = s.CJKReadingSpeed
@@ -194,6 +196,7 @@ func NewSettingsForm(r *http.Request) *SettingsForm {
 		CustomJS:               r.FormValue("custom_js"),
 		ExternalFontHosts:      r.FormValue("external_font_hosts"),
 		EntrySwipe:             r.FormValue("entry_swipe") == "1",
+		FilterFutureEntries:    r.FormValue("filter_future_entries") == "1",
 		GestureNav:             r.FormValue("gesture_nav"),
 		DisplayMode:            r.FormValue("display_mode"),
 		DefaultReadingSpeed:    int(defaultReadingSpeed),

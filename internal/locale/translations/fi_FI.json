@@ -341,6 +341,7 @@
     "form.feed.label.scraper_rules": "Scraper-säännöt",
     "form.feed.label.rewrite_rules": "Rewrite-säännöt",
     "form.feed.label.blocklist_rules": "Block-säännöt",
+    "form.feed.label.without_future": "Ei näytä tulevia artikkeleita",
     "form.feed.label.keeplist_rules": "Keep-säännöt",
     "form.feed.label.ignore_http_cache": "Ohita HTTP-välimuisti",
     "form.feed.label.allow_self_signed_certificates": "Salli itseallekirjoitetut tai virheelliset varmenteet",

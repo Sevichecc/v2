@@ -137,6 +137,13 @@ func (h *handler) findEntries(w http.ResponseWriter, r *http.Request, feedID int
 	builder.WithTags(tags)
 	builder.WithEnclosures()
 
+	if request.HasQueryParam(r, "without_future") {
+		withoutFuture := request.QueryBoolParam(r, "without_future", false)
+		if withoutFuture {
+			builder.WithoutFutureEntries(withoutFuture)
+		}
+	}
+
 	if request.HasQueryParam(r, "globally_visible") {
 		globallyVisible := request.QueryBoolParam(r, "globally_visible", true)
 

@@ -730,6 +730,10 @@ func buildFilterQueryString(path string, filter *Filter) string {
 			values.Set("globally_visible", "true")
 		}
 
+		if filter.WithoutFuture {
+			values.Set("without_future", "true")
+		}
+
 		for _, status := range filter.Statuses {
 			values.Add("status", status)
 		}

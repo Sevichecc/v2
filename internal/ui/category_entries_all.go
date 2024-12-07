@@ -40,6 +40,7 @@ func (h *handler) showCategoryEntriesAllPage(w http.ResponseWriter, r *http.Requ
 	builder.WithoutStatus(model.EntryStatusRemoved)
 	builder.WithOffset(offset)
 	builder.WithLimit(user.EntriesPerPage)
+	builder.WithoutFutureEntries(user.FilterFutureEntries)
 
 	entries, err := builder.GetEntries()
 	if err != nil {

@@ -36,6 +36,7 @@ func (h *handler) showSettingsPage(w http.ResponseWriter, r *http.Request) {
 		CustomJS:               user.CustomJS,
 		ExternalFontHosts:      user.ExternalFontHosts,
 		EntrySwipe:             user.EntrySwipe,
+		FilterFutureEntries:    user.FilterFutureEntries,
 		GestureNav:             user.GestureNav,
 		DisplayMode:            user.DisplayMode,
 		DefaultReadingSpeed:    user.DefaultReadingSpeed,

@@ -29,6 +29,7 @@ func (h *handler) showFeedEntryPage(w http.ResponseWriter, r *http.Request) {
 	builder.WithFeedID(feedID)
 	builder.WithEntryID(entryID)
 	builder.WithoutStatus(model.EntryStatusRemoved)
+	builder.WithoutFutureEntries(user.FilterFutureEntries)
 
 	entry, err := builder.GetEntry()
 	if err != nil {

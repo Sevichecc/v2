@@ -340,6 +340,7 @@
     "form.feed.label.rewrite_rules": "नियम फिर से लिखें",
     "form.feed.label.apprise_service_urls": "Comma separated list of Apprise service URLs",
     "form.feed.label.blocklist_rules": "ब्लॉक नियम",
+    "form.feed.label.without_future": "भविष्य के लेखों को छुपाएं",
     "form.feed.label.keeplist_rules": "नियम बनाए रखें",
     "form.feed.label.urlrewrite_rules": " यूआरएल पुनर्लेखन नियम",
     "form.feed.label.ignore_http_cache": "एचटीटीपी कैश पर ध्यान न दें",

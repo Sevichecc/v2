@@ -217,6 +217,14 @@ func (e *EntryQueryBuilder) WithGloballyVisible() *EntryQueryBuilder {
 	return e
 }
 
+// WithoutFutureEntries returns a new EntryQueryBuilder without future entries.
+func (e *EntryQueryBuilder) WithoutFutureEntries(filterFutureEntries bool) *EntryQueryBuilder {
+	if filterFutureEntries {
+		e.conditions = append(e.conditions, "e.published_at <= now()")
+	}
+	return e
+}
+
 // CountEntries count the number of entries that match the condition.
 func (e *EntryQueryBuilder) CountEntries() (count int, err error) {
 	query := `

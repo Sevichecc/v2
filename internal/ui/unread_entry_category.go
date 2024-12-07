@@ -29,6 +29,7 @@ func (h *handler) showUnreadCategoryEntryPage(w http.ResponseWriter, r *http.Req
 	builder.WithCategoryID(categoryID)
 	builder.WithEntryID(entryID)
 	builder.WithoutStatus(model.EntryStatusRemoved)
+	builder.WithoutFutureEntries(user.FilterFutureEntries)
 
 	entry, err := builder.GetEntry()
 	if err != nil {

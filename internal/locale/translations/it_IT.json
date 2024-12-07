@@ -340,6 +340,7 @@
     "form.feed.label.rewrite_rules": "Regole di impaginazione del contenuto",
     "form.feed.label.apprise_service_urls": "Comma separated list of Apprise service URLs",
     "form.feed.label.blocklist_rules": "Regole di blocco",
+    "form.feed.label.without_future": "Non mostrare le entrate future",
     "form.feed.label.keeplist_rules": "Regole di autorizzazione",
     "form.feed.label.urlrewrite_rules": "Regole di riscrittura URL",
     "form.feed.label.ignore_http_cache": "Ignora cache HTTP",
